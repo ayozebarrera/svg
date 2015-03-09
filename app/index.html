@@ -24,23 +24,35 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">svg</h3>
+    <header id="topHead" class="navbar navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="options-left">
+            <button class="navbar-toggle pull-left" type="button" id="bars" data-transition="extra-pop">
+              <span class="sr-only">Toggle navigation</span>
+              <i class="fa fa-bars custom"></i>
+            </button>
+          </div>
+          <div class="options-right" type="button">
+            <!-- Mobile -->
+            <div class="mobile">
+              <a data-toggle="dropdown" href="#" id="social"><i class="fa fa-ellipsis-v custom"></i></a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <!-- /Perfil ó Editar perfil -->
+                <li><a href="">Empezar de nuevo</a></li>
+                <li><a href="">Configuración</a></li>
+                <li><a href="">Ayuda</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-center">
+            Vestimenta canaria
+          </div>
+        </div>
       </div>
-
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
-
+      <div class="shadow"></div>
+    </header>
+    <div class="container main-container">
       <div class="row marketing">
         <div class="col-lg-6">
           <h4>HTML5 Boilerplate</h4>
@@ -53,12 +65,11 @@
           <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
           <h4>Modernizr</h4>
           <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-
         </div>
       </div>
 
       <div class="footer">
-        <p>♥ from the Yeoman team</p>
+        <p>♥ from me.</p>
       </div>
     </div>
 
